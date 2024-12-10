@@ -1,0 +1,705 @@
+#navbar .big{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    flex-shrink: 1;
+    z-index: 1;
+}
+
+#navbar .logo{
+    display: flex;
+}
+
+#navbar .lists ul{
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+
+#navbar .lists ul > li{
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.5s ease-in-out;
+}
+
+#navbar .lists ul > li:hover{
+    color: #017e4c;
+}
+
+
+#navbar .buttons .btn{
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px 15px 15px 15px;
+}
+
+
+#navbar .buttons .btn2{
+    background-color: #00D47E;
+    color: #F2F4F4;
+}
+
+#navbar .buttons .btn1{
+    background-color: #F2F4F4;
+    color: black;
+}
+
+#navbar .buttons{
+    padding: 10px 10px 0 0;
+}
+
+#navbar .logo{
+    padding: 0 0 10px 10px;
+}
+
+#navbar #menu_bar{
+    display: none;
+}
+
+
+/* Sidebar Start here */
+
+.sidebar{
+    width: 100%;
+    height: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #00D47E;
+    z-index: 4;
+    overflow: hidden;
+    
+    transition: all 400ms ease;
+    
+}
+
+.sidebar.active{
+    height: 100%;
+}
+
+
+.sidebar .logos{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+
+.sidebar .logos #cross{
+    cursor: pointer;
+    transition: transform 400ms ease;
+}
+
+.sidebar .logos #cross:hover{
+    transform: rotate(360deg);
+}
+
+.sidebar .links{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.sidebar .links a{
+    text-decoration: none;
+    color: #F2F4F4;
+    width: fit-content;
+}
+
+.sidebar .links a:hover{
+    color: #060707;
+
+}
+
+/* Responsive The Navbar */
+
+@media only screen and (max-width:900px){
+    #navbar .lists ul{
+        display: none;
+    }
+
+    #navbar .buttons{
+        display: none;
+    }
+
+    #navbar #menu_bar{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+
+/* ============= Navbar End ============= */
+
+
+
+/* ============= Hero Section Start Here ============ */
+
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    /* padding: 50px 20px 120px 20px; */
+    padding: 0;
+    overflow: hidden;
+    background-color: #f3fffa;
+    height: fit-content;
+    border-radius: 25px;
+}
+
+#hero .hero_img{
+    width: 100%;
+    height: 100vh;
+    background: url('assets/wind\ turbine.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+#hero .details2{
+    width: 400px;
+    height: 300px;
+    background-color: transparent;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+}
+
+#hero .details1 p{
+    font-size: 1.5rem;
+    color: #F2F4F4;
+}
+
+#hero .details1 h1{
+    font-size: 4rem;
+    color: #F2F4F4;
+}
+
+#hero .details1 .buttons{
+    display: flex;
+    gap: 40px;
+}
+
+#hero .details1 .buttons button{
+    border: none;
+    border-bottom: 1px solid rgb(255, 250, 250);
+    background-color: transparent;
+    font-size: 20px;
+    padding: 20px;
+    color: #F2F4F4;
+}
+
+#hero .details1 .buttons button:hover{
+    color: #040404;
+    border-bottom: 1px solid #040404;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+
+#hero .details2{
+    border-radius: 10px;
+    position: relative;
+}
+
+#hero .details2 img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+#hero .details2 h2{
+    position: absolute;
+    bottom: 0;
+    margin-left: 60px;
+    color: #F2F4F4;
+}
+
+
+
+
+#hero .info{
+    width: 100%;
+    /* background-color: #ffe711; */
+    height: fit-content;
+    margin-top: 70px;
+    display: flex;
+}
+
+#hero .info h2{
+    padding: 20px;
+    color: #060707;
+    font-size: 40px;
+}
+
+#hero .info p{
+    padding: 50px;
+    color: #040404;
+    font-size: 15px;
+    
+}
+
+
+#hero .flex{
+    width: 100%;
+    height: 250px;
+    /* background-color: rgb(4, 4, 85); */
+    margin-top: 10px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+
+#hero .flex .gool{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #F2F4F4;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#hero .flex .gool h3{
+    padding-top: 50px;
+}
+
+#hero .flex .gool:hover{
+    background-color: #ecffff;
+    color: #00D47E;
+}
+
+
+
+/* Responsive The Hero Section */
+
+
+
+@media only screen and (max-width:900px){
+
+
+    #hero .hero_img{
+        flex-direction: column;
+        /* height: 100vh; */
+    }
+
+    #hero .details2{
+        margin-bottom: 20px;
+    }
+    #hero .container{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #hero .info{
+        flex-direction: column;
+    }
+
+    #hero .info p{
+        padding-top: 0;
+        margin-left: 15px;
+    }
+
+    #hero .flex{
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    #hero .info h2{
+        margin-left: 25px;
+    }
+}
+
+/* ============= Hero Section End Here ================ */
+
+
+
+/* ============= Target Section ====================== */
+
+#target .container{
+    /* background-color: #017e4c; */
+    width: 100%;
+    height: fit-content;
+    border-radius: 0;
+    margin-top: 10px;
+}
+
+#target .container h2{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2.5rem;
+}
+
+#target .container .grid .square{
+    width: 350px;
+    height: fit-content;
+    background-color: #F2F4F4;
+}
+
+#target .square .data{
+    padding: 20px;
+}
+
+#target .square{
+    border-radius: 4px;
+}
+
+
+#target .grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 20px;
+    row-gap: 20px;
+}
+
+
+
+/* Make the Grids Responsive */
+
+@media only screen and (min-width:600px){
+    #target .grid {
+        grid-template-columns: repeat(2,1fr);
+        padding: 20px;
+    }
+}
+
+@media only screen and (min-width:900px){
+    #target .grid{
+        grid-template-columns: repeat(3,1fr);
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width:600px){
+    #target .grid{
+        grid-template-columns: 1fr;
+        padding: 100px;
+    }
+}
+
+
+
+/* ============ Target Section End Here =========== */
+
+
+
+
+/* =========== Solar Worker Section Here ========= */
+
+
+#solar .mycon{
+    width: 100%;
+    max-width: 1200px;
+    padding: 0;
+    margin: auto;
+    height: fit-content;
+    overflow: hidden;
+}
+
+#solar .bigger{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    
+}
+
+
+#solar .big1{
+    height: fit-content;
+    width: 50%;
+}
+
+#solar .big2{
+    height: fit-content;
+    width: 50%;
+    padding: 0%;
+}
+
+#solar .big1 button{
+    border: none;
+    background-color: #00D47E;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 1rem;
+    color: #F2F4F4;
+}
+
+.foo .sq1{
+    width: 230px;
+    height: 190px;
+    background-color: #F2F4F4;
+    border: 1px solid #1E1E1E;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+#solar .foo{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 20px;
+    margin: 20px;
+}
+
+#solar .big1 .first, .btn{
+    margin-left: 30px;
+}
+
+
+#solar .big2 .picture{
+    width: 400px;
+    height: 535px;
+    margin-top: 40px;
+    border-radius: 20px;
+    background: url('assets/solar\ worker.jpeg');
+    background-size: cover;
+    margin-left: 150px;
+}
+
+#solar .foo .sq1 h1{
+    color: #6f7d73;
+}
+
+
+/* Responive the solar One */
+
+
+@media only screen and (max-width:900px){
+    #solar .bigger{
+        flex-direction: column;
+    }
+
+    #solar .foo .lol{
+        margin-right: 5px;
+    }
+    #solar .big2 .picture{
+        margin-left: 70px;
+    }
+}
+
+
+
+/* =============The Solar Section Ends Here==================== */
+
+
+
+
+
+/* ==================== The Start Of carousel Here =============== */
+
+
+#carousel .container{
+    background-color: white;
+    height: fit-content;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 0;
+    overflow: hidden;
+}
+
+#carousel .carousel-container{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    padding: 20px;
+}
+
+
+
+#carousel .carousel-container .carousel-item{
+    width: 1000px;
+    height: 400px;
+    background-color: #F2F4F4;
+    margin: auto;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+
+#carousel .pict{
+    width: 50%;
+    height: 80%;
+    border-radius: 8px;
+    background: url('assets/ch1.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 50px;
+    padding: 10px;
+}
+
+#carousel .text p{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#carousel .text .btn{
+    border: none;
+    background-color: #00D47E;
+    color: #F2F4F4;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+#carousel .text h3{
+    margin-top: 30px;
+}
+
+
+#carousel .pict1{
+    width: 50%;
+    height: 80%;
+    border-radius: 8px;
+    background: url('assets/ch2.jpeg');
+    background-size: cover;
+    margin: 50px;
+    padding: 10px;
+
+}
+
+
+#carousel .pict2{
+    width: 50%;
+    height: 80%;
+    border-radius: 8px;
+    background: url('assets/ch3.jpeg');
+    background-size: cover;
+    margin: 50px;
+    padding: 10px;
+}
+
+
+#carousel .carousel-indicators{
+    width: 700px;
+    height: 100px;
+    /* background-color: aquamarine; */
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+#carousel .indicator {
+    width: 200px;
+    height: 3px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    position: relative;
+}
+
+
+#carousel .progress{
+    height: 100%;
+    width: 0;
+    background-color: #00D47E;
+    transition: width 2s linear;
+}
+
+
+
+
+
+/* Responsiveness of the Carousel page here */
+
+@media only screen and (max-width:900px){
+    #carousel .carousel-indicators{
+        width: 400px
+    }
+}
+
+
+
+
+
+/* ==================== Footer and the Last Section Is Started Here ============= */
+
+
+#footer{
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+}
+
+#footer .container{
+    background-color: black;
+    height: 100%;
+    border-radius: none;
+}
+
+
+#footer .bigger{
+    display: flex;
+    gap: 100px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+
+#footer .navi{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(104, 101, 101);
+    padding: 20px;
+}
+
+
+#footer .last{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+
+
+
+
+/* Responsiveness of the footer Starts Here */
+
+
+@media only screen and (max-width:900px){
+    #footer .bigger{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    #footer .navi{
+        flex-direction: column;
+    }
+    #footer ul{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #footer .last{
+        flex-direction: column;
+        text-align: center;
+    }
+    #footer .last2{
+        flex-direction: column;
+    }
+}
