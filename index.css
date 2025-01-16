@@ -294,6 +294,9 @@
         height: fit-content;
         width: fit-content;
     }
+    #hero .details2{
+        height: fit-content;
+    }
 }
 
 
@@ -303,6 +306,10 @@
         height: fit-content;
         width: fit-content;
     }
+
+    #hero .details2{
+        height: fit-content;
+    }
 }
 
 
@@ -311,6 +318,10 @@
         flex-direction: column;
         height: fit-content;
         width: fit-content;
+    }
+
+    #hero .details2{
+        height: fit-content;
     }
 }
 
@@ -620,7 +631,7 @@
 
 @media only screen and (max-width:900px){
     #carousel .carousel-indicators{
-        width: 400px
+        width: 400px;
     }
 }
 
