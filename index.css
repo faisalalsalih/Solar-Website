@@ -288,42 +288,35 @@
 
 /* Responsive The Hero Section */
 
-
-
 @media only screen and (max-width:900px){
-
-
-    #hero .hero_img{
-        flex-direction: column;
-        /* height: 100vh; */
-    }
-
-    #hero .details2{
-        margin-bottom: 20px;
-    }
-    #hero .container{
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    #hero .info{
-        flex-direction: column;
-    }
-
-    #hero .info p{
-        padding-top: 0;
-        margin-left: 15px;
-    }
-
     #hero .flex{
         flex-direction: column;
         height: fit-content;
-    }
-
-    #hero .info h2{
-        margin-left: 25px;
+        width: fit-content;
     }
 }
+
+
+@media only screen and (max-width:786px){
+    #hero .flex{
+        flex-direction: column;
+        height: fit-content;
+        width: fit-content;
+    }
+}
+
+
+@media only screen and (max-width:600px){
+    #hero .flex{
+        flex-direction: column;
+        height: fit-content;
+        width: fit-content;
+    }
+}
+
+
+
+
 
 /* ============= Hero Section End Here ================ */
 
