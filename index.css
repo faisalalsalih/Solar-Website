@@ -70,7 +70,6 @@
     background-color: #00D47E;
     z-index: 4;
     overflow: hidden;
-    
     transition: all 400ms ease;
     
 }
@@ -286,47 +285,6 @@
 
 
 
-/* Responsive The Hero Section */
-
-@media only screen and (max-width:900px){
-    #hero .flex{
-        flex-direction: column;
-        height: fit-content;
-        width: fit-content;
-    }
-    #hero .details2{
-        height: fit-content;
-    }
-}
-
-
-@media only screen and (max-width:786px){
-    #hero .flex{
-        flex-direction: column;
-        height: fit-content;
-        width: fit-content;
-    }
-
-    #hero .details2{
-        height: fit-content;
-    }
-}
-
-
-@media only screen and (max-width:600px){
-    #hero .flex{
-        flex-direction: column;
-        height: fit-content;
-        width: fit-content;
-    }
-
-    #hero .details2{
-        height: fit-content;
-    }
-}
-
-
-
 
 
 /* ============= Hero Section End Here ================ */
@@ -375,7 +333,7 @@
 
 /* Make the Grids Responsive */
 
-@media only screen and (min-width:600px){
+/* @media only screen and (min-width:600px){
     #target .grid {
         grid-template-columns: repeat(2,1fr);
         padding: 20px;
@@ -388,13 +346,13 @@
         padding: 20px;
     }
 }
-
+/* 
 @media only screen and (max-width:600px){
-    #target .grid{
-        grid-template-columns: 1fr;
-        padding: 100px;
-    }
-}
+    #target .grid{ */
+        /* grid-template-columns: 1fr;
+        padding: 100px; */
+    /* }
+} */ 
 
 
 
@@ -419,7 +377,6 @@
     width: 100%;
     height: fit-content;
     display: flex;
-    
 }
 
 
@@ -478,22 +435,6 @@
     color: #6f7d73;
 }
 
-
-/* Responive the solar One */
-
-
-@media only screen and (max-width:900px){
-    #solar .bigger{
-        flex-direction: column;
-    }
-
-    #solar .foo .lol{
-        margin-right: 5px;
-    }
-    #solar .big2 .picture{
-        margin-left: 70px;
-    }
-}
 
 
 
@@ -627,17 +568,6 @@
 
 
 
-/* Responsiveness of the Carousel page here */
-
-@media only screen and (max-width:900px){
-    #carousel .carousel-indicators{
-        width: 400px;
-    }
-}
-
-
-
-
 
 /* ==================== Footer and the Last Section Is Started Here ============= */
 
@@ -681,29 +611,40 @@
 
 
 
+/* Responsive ALL The Site Here */
 
-/* Responsiveness of the footer Starts Here */
 
 
-@media only screen and (max-width:900px){
-    #footer .bigger{
+@media only screen and (max-width:980px){
+    #hero .hero_img{
         flex-direction: column;
         gap: 50px;
     }
-
-    #footer .navi{
+    #hero .info{
         flex-direction: column;
-    }
-    #footer ul{
-        flex-direction: column;
-        padding: 0;
+        margin-top: 30px;
     }
 
-    #footer .last{
+    #hero .flex{
         flex-direction: column;
-        text-align: center;
-    }
-    #footer .last2{
-        flex-direction: column;
+        height: fit-content;
     }
 }
+
+
+@media only screen and (max-width:1170px){
+    #target .grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+
+@media only screen and (max-width:800px){
+    #target .grid{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+    }
+}
+
+
