@@ -401,8 +401,8 @@
 }
 
 .foo .sq1{
-    width: 230px;
-    height: 190px;
+    width: 250px;
+    height: 230px;
     background-color: #F2F4F4;
     border: 1px solid #1E1E1E;
     border-radius: 20px;
@@ -472,7 +472,7 @@
 
 #carousel .carousel-container .carousel-item{
     width: 1000px;
-    height: 400px;
+    height: fit-content;
     background-color: #F2F4F4;
     margin: auto;
     border-radius: 8px;
@@ -538,7 +538,6 @@
 #carousel .carousel-indicators{
     width: 700px;
     height: 100px;
-    /* background-color: aquamarine; */
     margin: auto;
     margin-top: 10px;
     display: flex;
@@ -564,7 +563,11 @@
     transition: width 2s linear;
 }
 
-
+#carousel .picture{
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+}
 
 
 
@@ -648,3 +651,94 @@
 }
 
 
+@media only screen and (max-width:1240px){
+    #solar .bigger{
+        flex-direction: column;
+        align-items: center;
+    }
+    #solar .foo{
+        row-gap: 30px;
+        column-gap: 30px;
+    }
+
+    #solar .big2 .picture{
+        margin-left: 90px;
+    }
+    
+}
+@media only screen and (max-width:880px){
+    #solar .foo{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #solar .big2 .picture{
+        width: 300px;
+        height: 435px;
+        margin-left: 20px;
+    }
+}
+
+
+@media only screen and (max-width:600px){
+    #solar .big2 .picture{
+        width: 200px;
+        height: 335px;
+    }
+    #solar .bigger{
+        align-items: start;
+    }
+}
+
+
+
+@media only screen and (max-width:710px){
+    #carousel .carousel-indicators{
+        width: 400px;
+    }
+
+    #carousel .carousel-item{
+        flex-direction: column;
+    }
+
+    #carousel .pict{
+        width: 70%;
+        height: 80%;
+    }
+
+    #carousel .pict1{
+        width: 70%;
+        height: 80%
+    }
+
+
+    #carousel .pict2{
+        width: 70%;
+        height: 80%
+    }
+
+    #carousel .picture{
+        width: 100%;
+        height: 200px;
+    }
+}
+
+
+@media only screen and (max-width:990px){
+    #footer .bigger{
+        flex-direction: column;
+        gap: 100px;
+    }
+}
+
+
+@media only screen and (max-width:690px){
+    #footer .navi{
+        flex-direction: column;
+    }
+    #footer .navi .lists ul{
+        flex-direction: column;
+        
+    }
+    #footer .last{
+        flex-direction: column;
+    }
+}
