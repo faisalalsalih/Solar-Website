@@ -744,5 +744,11 @@
 }
 
 
+@media only screen and (max-width:440px){
+   #hero .details1 h1{
+    font-size: 50px;
+   }
+}
+
 
 /* BYE BYE NEW FEATURE WILL BE ONLY AVAILABLE WHEN I THINK IT NEEDS */
